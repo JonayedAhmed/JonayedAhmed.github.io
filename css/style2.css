@@ -1,0 +1,226 @@
+.worcard {
+    box-sizing: border-box;
+}
+
+
+.worcard {
+    margin-top: 20rem;
+    margin-bottom: -10rem;
+    position: relative;
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+
+    width: 370px;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    -ms-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    background-color: #fff;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s;
+}
+
+.worcard a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.worcard:hover {
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.3);
+}
+
+
+.cardThumb {
+    height: 235px;
+    overflow: hidden;
+    background-color: #000;
+    transition: height 0.3s;
+}
+
+.cardThumb img {
+    display: block;
+    opacity: 1;
+    transition: opacity 0.3s, -webkit-transform 0.3s;
+    transition: opacity 0.3s, transform 0.3s;
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+}
+
+.worcard:hover .cardThumb img {
+    opacity: 0.6;
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+.worcard:hover .cardThumb {
+    height: 90px;
+}
+
+.cardBody {
+    position: relative;
+    padding: 20px;
+    height: 185px;
+    transition: height 0.3s;
+}
+
+.worcard:hover .cardBody {
+    height: 330px;
+}
+
+.cardCategory {
+    position: absolute;
+    left: 0;
+    top: -25px;
+    height: 25px;
+    padding: 0 15px;
+    color: #FFF;
+    font-size: 11px;
+    line-height: 25px;
+    text-transform: uppercase;
+    background-color: darkorange;
+}
+
+.cardTitle {
+    margin: 0;
+    padding: 0 0 10px 0;
+    font-size: 22px;
+    color: #000;
+    font-weight: bold;
+}
+
+.worcard:hover .cardTitle {
+    -webkit-animation: titleBlur 0.3s;
+    animation: titleBlur 0.3s;
+}
+
+.cardSubtitle {
+    margin: 0;
+    padding: 0 0 10px 0;
+    font-size: 19px;
+    color: darkorange;
+}
+
+.worcard:hover .cardSubtitle {
+    -webkit-animation: subtitleBlur 0.3s;
+    animation: subtitleBlur 0.3s;
+}
+
+.cardDescription {
+
+    left: 20px;
+    right: 20px;
+    bottom: 65px;
+    margin: 0;
+    padding: 0;
+    color: #666C74;
+    font-size: 14px;
+    line-height: 27px;
+    opacity: 0;
+    transition: opacity 0.2s, -webkit-transform 0.2s;
+    transition: opacity 0.2s, transform 0.2s;
+    transition-delay: 0s;
+    -webkit-transform: translateY(25px);
+    -ms-transform: translateY(25px);
+    transform: translateY(25px);
+}
+
+.worcard:hover .cardDescription {
+    opacity: 1;
+    transition-delay: 0.1s;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+}
+
+
+
+
+
+
+
+@media only screen and (max-width: 375px) {
+
+
+    .worcard {
+        width: 300px;
+        top: 50%;
+        left: 50%;
+    }
+
+    .cardThumb {
+        height: 150px;
+        overflow: hidden;
+        background-color: #000;
+        transition: height 0.3s;
+    }
+
+}
+
+@media only screen and (max-width: 320px) {
+
+    .worcard {
+        width: 300px;
+        top: 50%;
+        left: 50%;
+    }
+
+    .cardThumb {
+        height: 150px;
+        overflow: hidden;
+        background-color: #000;
+        transition: height 0.3s;
+    }
+}
+
+
+
+
+@-webkit-keyframes titleBlur {
+    0% {
+        opacity: 0.6;
+        text-shadow: 0px 5px 5px rgba(0, 0, 0, 0.6);
+    }
+
+    100% {
+        opacity: 1;
+        text-shadow: 0px 5px 5px transparent;
+    }
+}
+
+@keyframes titleBlur {
+    0% {
+        opacity: 0.6;
+        text-shadow: 0px 5px 5px rgba(0, 0, 0, 0.6);
+    }
+
+    100% {
+        opacity: 1;
+        text-shadow: 0px 5px 5px transparent;
+    }
+}
+
+@-webkit-keyframes subtitleBlur {
+    0% {
+        opacity: 0.6;
+        text-shadow: 0px 5px 5px rgba(255, 140, 0, 0.6);
+    }
+
+    100% {
+        opacity: 1;
+        text-shadow: 0px 5px 5px rgba(255, 140, 0, 0);
+    }
+}
+
+@keyframes subtitleBlur {
+    0% {
+        opacity: 0.6;
+        text-shadow: 0px 5px 5px rgba(255, 140, 0, 0.6);
+    }
+
+    100% {
+        opacity: 1;
+        text-shadow: 0px 5px 5px rgba(255, 140, 0, 0);
+    }
+}
