@@ -109,7 +109,8 @@ body {
 .chef,
 .hairstyle {
 
-    padding-top: 60px;
+    padding-top: 45px;
+
     position: absolute;
     bottom: 0%;
     left: 0%;
@@ -731,8 +732,17 @@ footer .column i+i {
 .circle h3 {
     color: bisque;
     position: absolute;
-    padding-left: 2vmax;
-    padding-top: 3vmax;
+    padding-left: 9%;
+    padding-top: 15%;
+}
+
+@-moz-document url-prefix() {
+    .circle h3 {
+        color: bisque;
+        position: absolute;
+        padding-left: 16%;
+        padding-top: 22%;
+    }
 }
 
 .stroke {
@@ -831,13 +841,6 @@ textarea {
 @media only screen and (max-width: 450px) {
 
 
-    .circle h3 {
-        color: bisque;
-        position: absolute;
-        padding-left: 3.5vmax;
-        padding-top: 5.5vmax;
-    }
-
 
     header .details h1 {
         font-size: 20px;
@@ -865,12 +868,7 @@ textarea {
 
 @media only screen and (max-width: 375px) {
 
-    .circle h3 {
-        color: bisque;
-        position: absolute;
-        padding-left: 5vmax;
-        padding-top: 8vmax;
-    }
+
 
 
     header .details h1 {
@@ -897,12 +895,6 @@ textarea {
 
 @media only screen and (max-width: 320px) {
 
-    .circle h3 {
-        color: bisque;
-        position: absolute;
-        padding-left: 6vmax;
-        padding-top: 9vmax;
-    }
 
 
     header .details h1 {
